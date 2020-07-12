@@ -29,7 +29,6 @@ export default (state = inititalState, action) => {
 			};
 
 		case actions.LOGS_ERROR:
-			console.error(action.payload);
 			return {
 				...state,
 				error: action.payload,
